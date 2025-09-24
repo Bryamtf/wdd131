@@ -1,20 +1,14 @@
-@media screen and (min-width: 500px) {
-  main {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1rem;
-  }
-}
 @media screen and (min-width: 700px) {
   #menu {
-    display: none; 
+    display: none;
   }
 
   nav ul {
-    display: flex; 
+    display: flex;
     position: static;
     flex-direction: row;
     background: none;
+    gap: 0.5rem;
   }
 
   nav ul li {
@@ -24,14 +18,15 @@
   nav ul li a {
     border-bottom: none;
     padding: 0.5rem 1rem;
+    border-radius: 4px;
   }
 
   main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
   }
-  header h1 {
+  header h2 {
     margin: 0;
+    font-size: 1.8rem;
   }
 }
