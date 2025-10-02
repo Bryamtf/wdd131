@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokyo - Futuristic City</title>
+    <meta name="description" content="Discover Tokyo, a unique blend of tradition and modernity">
+    <meta name="author" content="Bryam Terrones">
+    <link rel="stylesheet" href="styles/base-place.css">
+    <link rel="stylesheet" href="styles/base-large-place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Tokyo</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/templo-large.webp" media="(min-width: 768px)">
+                <img src="images/senso-tokio.webp" alt="View of Tokyo with illuminated skyscrapers" width="600"
+                    height="910">
+            </picture>
+        </section>
+
+        <section class="data">
+            <h2>Data</h2>
+            <div class="data-grid">
+                <div class="data-item">
+                    <span class="label">Population:</span>
+                    <span class="value">13.96 million</span>
+                </div>
+                <div class="data-item">
+                    <span class="label">Language:</span>
+                    <span class="value">Japanese</span>
+                </div>
+                <div class="data-item">
+                    <span class="label">Currency:</span>
+                    <span class="value">Yen (¥)</span>
+                </div>
+                <div class="data-item">
+                    <span class="label">Area:</span>
+                    <span class="value">2,194 km²</span>
+                </div>
+                <div class="data-item">
+                    <span class="label">Time Zone:</span>
+                    <span class="value">JST (UTC+9)</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="weather">
+            <h2>Weather
+
+                <img src="images/sunny_icon.svg"  alt="Weather icon" class="weather-title-icon">
+            </h2>
+            <div class="weather-content">
+                    <img src="images/sunny_icon.svg" alt="Weather icon" class="weather-mobile-icon">
+                <div class="weather-grid">
+                    <div class="weather-item">
+                        <span class="label">Condition:</span>
+                        <span class="value">Partly Cloudy</span>
+                    </div>
+                    <div class="weather-item">
+                        <span class="label">Temperature:</span>
+                        <span class="value" id="temperature">15°C</span>
+                    </div>
+                    <div class="weather-item">
+                        <span class="label">Wind:</span>
+                        <span class="value" id="wind-speed">12 km/h</span>
+                    </div>
+                    <div class="weather-item">
+                        <span class="label">Wind Chill:</span>
+                        <span class="value" id="wind-chill">N/A</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> | BRYAM TERRONES | Tokyo, Japan</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+
+</html>
